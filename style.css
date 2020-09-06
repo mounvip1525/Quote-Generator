@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Syne&display=swap');
+*{
+    margin:0;
+    box-sizing:border-box
+}
+body{
+    min-height: 100vh;
+    background-image: -webkit-linear-gradient(125deg,#056676 30%,#5eaaa8 50%,#a3d2ca 50%,#e8ded2 80%);
+    color:black;
+    text-align:center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+  display:inline-block;
+  margin-bottom:0px;
+  font-family: 'Syne', sans-serif;
+}
+hr{
+  width:50%;
+  display: -webkit-inline-box;
+  margin-bottom:30px;
+  height:1px;
+  height:2px;
+  border-width:0;
+  color:white;
+  background-color:gray;
+}
+.quote-container{
+    width:auto;
+    max-width: 800px;
+    padding:20px 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow:0 5px 5px 5px rgba(224,236,228,0.2);  
+}
+#quote{
+    font-size:3rem;
+    font-weight:500;
+    font-family: 'IM Fell Double Pica', serif;
+    font-style:bold;
+}
+#author{
+    margin-top:3px;
+    font-size:1.5rem;
+    font-family:Neuton,sans-serif;
+    font-style:italic;
+    margin-left:60%;
+}
+.button-container{
+    margin-top:15px;
+    display:flex;
+    justify-content: space-between;
+}
+button{
+    cursor:pointer;
+    font-size:1.5rem;
+    border:none;
+    border-radius:15px;
+    background-color:#e0ece4;
+    outline:none;
+    padding: 0.2rem 0.5rem;
+}
+button:hover{
+    filter:brightness(110%);
+}
+button:active {
+    transform: translate(0, 0.2rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255,0.5);
+  }
+#facebook:hover{
+    color:#4267B2;
+}
+#instagram:hover{
+  color:#C13584;
+}
+#whatsapp:hover{
+  color:#075e54;
+}
+#next:hover{
+  color:#2ec1ac;
+}
+.loader {
+    border: 12px solid #D3CDD4;
+    border-top: 12px solid #333;
+    border-radius:50%;
+    width: 90px;
+    height: 90px;
+    animation: spin 3s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  #footer{
+    font-size:1.5rem;
+    margin-top:30px;
+    font-family: 'Courgette', cursive;
+  }
+  @media screen and (max-width: 800px) {
+    .quote-container {
+      margin: auto 10px;
+    }
+  
+    .quote-text {
+      font-size: 2.5rem;
+    }
+  }
+
+
