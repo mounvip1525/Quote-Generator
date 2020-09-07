@@ -7,9 +7,18 @@ const instagram=document.getElementById("instagram");
 const next=document.getElementById("next")
 const loader=document.getElementById("loader");
 
+function loading(){
+  loader.hidden=false;
+  quoteContainer.hidden=true;
+}
+function complete(){
+  loader.hidden=true;
+  quoteContainer.hidden=false;
+}
 let quoteDetails=[];
 function getQuote(){
 
+  loading();
   fetch('https://type.fit/api/quotes')
   .then(function(res){
     return res.json()
@@ -21,7 +30,7 @@ function getQuote(){
     author.innerHTML='-'+ "Unknown";
     else
     author.innerHTML='-'+ quoteDetails.author;
-
+ complete();
   })
   
 }
